@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>American flag</title>
+  <style>
+    .container{
+      background-color: white;
+      height: 1300px;
+      width: 100%;
+      border: 5px solid black;
+      display: grid;
+      /* repeat(13, 1fr) */
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ; 
+      grid-template-columns: 3fr 4fr;
+    }
+    .blue{
+      background-color: blue;
+      grid-row: 1 / span 7;
+      grid-column: 1 / span 1;
+    }
+    .red{
+      background-color: red;
+    }
+    .white{
+      background-color: white;
+    }
+    .long{
+      grid-column: 1 / span 2;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="blue"></div>
+    <div class="red"></div>
+    <div class="white"></div>
+    <div class="red"></div>
+    <div class="white"></div>
+    <div class="red"></div>
+    <div class="white"></div>
+    <div class="red"></div>
+    <div class="white long"></div>
+    <div class="red long"></div>
+    <div class="white long"></div>
+    <div class="red long"></div>
+    <div class="white long"></div>
+    <div class="red long"></div>
+  </div>
+</body>
+</html>
